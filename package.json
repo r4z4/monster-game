@@ -1,0 +1,21 @@
+{
+  "name": "first-cea",
+  "version": "1.0.0",
+  "description": "elm game",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "monster-game"
+  },
+  "keywords": [
+    "elm"
+  ],
+  "author": "r4z4",
+  "license": "ISC"
+}
