@@ -1,0 +1,183 @@
+/*
+  elm-hot creates an additional div wrapper around the app to make HMR possible.
+  This could break styling in development mode if you are using Elm UI.
+
+  More context in the issue:
+    https://github.com/halfzebra/create-elm-app/issues/320
+*/
+[data-elm-hot="true"] {
+  height: inherit;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  text-align: center;
+  color: #293c4b;
+}
+
+h1 {
+  font-size: 30px;
+}
+#resignArea {
+  margin: auto;
+  clear: left;
+}
+
+#resignArea button, h3 {
+  margin: 2px;
+}
+
+.btnClass {
+	border: 2px solid black;
+	background-color: lightblue;
+	cursor: pointer;
+}
+
+img {
+  margin: 10px 0;
+  width: 200px;
+  height: 200px;
+}
+.incorrect {
+	float: left;
+	margin: 0 0 0 10%;
+	display: flex;
+}
+
+span {
+  padding: 5px;
+  margin: 2px;
+}
+button {
+	margin-top: 10px;
+}
+.underscores {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.failures {
+	margin: 20% 0 0 0;
+}
+
+#monster {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: auto;
+  clear: left;
+}
+
+.winningEnd {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation-name: shrink;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: shrink;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: -moz-transform;
+    transition-duration: 1s;
+    animation-name: shrink;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes shrink {
+    from {
+        -webkit-transform:scale(1);
+    }
+    to {
+        -webkit-transform:scale(0);
+    }
+}
+@-moz-keyframes shrink {
+    from {
+        -moz-transform:scale(1);
+    }
+    to {
+        -moz-transform:scale(0);
+    }
+}
+@keyframes shrink {
+    from {
+        transform:scale(1);
+    }
+    to {
+        transform:scale(0);
+    }
+}
+
+
+.losingEnd {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation-name: grow;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: grow;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: -moz-transform;
+    transition-duration: 1s;
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes grow {
+    from {
+        -webkit-transform:scale(1);
+    }
+    to {
+        -webkit-transform:scale(6);
+    }
+}
+@-moz-keyframes grow {
+    from {
+        -moz-transform:scale(1);
+    }
+    to {
+        -moz-transform:scale(6);
+    }
+}
+@keyframes grow {
+    from {
+        transform:scale(1);
+    }
+    to {
+        transform:scale(6);
+    }
+}
+
+.letterBtns {
+	margin-top: 20px;
+}
+
+.letterBtns button {
+	margin: 0 5px;
+	width: 2em;
+  background-color: lightblue; /* Green */
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
